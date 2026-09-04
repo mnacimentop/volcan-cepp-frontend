@@ -32,18 +32,12 @@ importers:
       '@pormeldev/axis-shared':
         specifier: 0.7.0
         version: 0.7.0(react@19.1.0)
-      '@pormeldev/next-runtime-kit':
-        specifier: 1.5.1
-        version: 1.5.1(@pormeldev/axis-common-lib@2.1.1-beta.3)(@pormeldev/axis-shared@0.7.0(react@19.1.0))(next-intl@4.9.2(@swc/helpers@0.5.23)(next@16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@playwright/test@1.59.1)(@types/node@20.19.39)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(typescript@7.0.2))(next@16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@playwright/test@1.59.1)(@types/node@20.19.39)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       jose:
         specifier: ^5.9.6
         version: 5.10.0
       next:
         specifier: 16.3.0
         version: 16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@playwright/test@1.59.1)(@types/node@20.19.39)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      next-intl:
-        specifier: ^4.7.0
-        version: 4.9.2(@swc/helpers@0.5.23)(next@16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@playwright/test@1.59.1)(@types/node@20.19.39)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(typescript@7.0.2)
       react:
         specifier: 19.1.0
         version: 19.1.0
@@ -696,18 +690,6 @@ packages:
   '@eslint/plugin-kit@0.7.2':
     resolution: {integrity: sha512-+CNAzxglkrpNf/kKywqQfk74QjtceuOE7Qm+AF8miRvPF/wmmK5+OJOgVh3AVTT3RP2mH3+FOaxlE5v72owk0A==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
-
-  '@formatjs/fast-memoize@3.1.2':
-    resolution: {integrity: sha512-vPnriihkfK0lzoQGaXq+qXH23VsYyansRTkTgo2aTG0k1NjLFyZimFVdfj4C9JkSE5dm7CEngcQ5TTc1yAyBfQ==}
-
-  '@formatjs/icu-messageformat-parser@3.5.5':
-    resolution: {integrity: sha512-ASMon8BNlKHgQQpZx84xI80EXRS90GlsEU4wEulCKCzrMtUdrfEvFc9UEYmRbvEvtFQLZ4qHXnisUy6PuFjwyA==}
-
-  '@formatjs/icu-skeleton-parser@2.1.5':
-    resolution: {integrity: sha512-9Kc6tMaAPZKTGevdfcvx5zT3v4BTfamo+djJE29wF6ds1QLhoA09MZNDpWMZaebWzuoOTIXhDvgmqmjSlUOGlw==}
-
-  '@formatjs/intl-localematcher@0.8.4':
-    resolution: {integrity: sha512-J51dAnynnqJdVUEXidHoIWn+qYve+yNQEgmFk9Dyfr3p0okzm+5QhQ+9QmsMz08+BeWTVpc1HadIiLfZmRYbAQ==}
 
   '@humanfs/core@0.19.2':
     resolution: {integrity: sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA==}
@@ -1632,94 +1614,6 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@parcel/watcher-android-arm64@2.5.6':
-    resolution: {integrity: sha512-YQxSS34tPF/6ZG7r/Ih9xy+kP/WwediEUsqmtf0cuCV5TPPKw/PQHRhueUo6JdeFJaqV3pyjm0GdYjZotbRt/A==}
-    engines: {node: '>= 10.0.0'}
-    cpu: [arm64]
-    os: [android]
-
-  '@parcel/watcher-darwin-arm64@2.5.6':
-    resolution: {integrity: sha512-Z2ZdrnwyXvvvdtRHLmM4knydIdU9adO3D4n/0cVipF3rRiwP+3/sfzpAwA/qKFL6i1ModaabkU7IbpeMBgiVEA==}
-    engines: {node: '>= 10.0.0'}
-    cpu: [arm64]
-    os: [darwin]
-
-  '@parcel/watcher-darwin-x64@2.5.6':
-    resolution: {integrity: sha512-HgvOf3W9dhithcwOWX9uDZyn1lW9R+7tPZ4sug+NGrGIo4Rk1hAXLEbcH1TQSqxts0NYXXlOWqVpvS1SFS4fRg==}
-    engines: {node: '>= 10.0.0'}
-    cpu: [x64]
-    os: [darwin]
-
-  '@parcel/watcher-freebsd-x64@2.5.6':
-    resolution: {integrity: sha512-vJVi8yd/qzJxEKHkeemh7w3YAn6RJCtYlE4HPMoVnCpIXEzSrxErBW5SJBgKLbXU3WdIpkjBTeUNtyBVn8TRng==}
-    engines: {node: '>= 10.0.0'}
-    cpu: [x64]
-    os: [freebsd]
-
-  '@parcel/watcher-linux-arm-glibc@2.5.6':
-    resolution: {integrity: sha512-9JiYfB6h6BgV50CCfasfLf/uvOcJskMSwcdH1PHH9rvS1IrNy8zad6IUVPVUfmXr+u+Km9IxcfMLzgdOudz9EQ==}
-    engines: {node: '>= 10.0.0'}
-    cpu: [arm]
-    os: [linux]
-    libc: [glibc]
-
-  '@parcel/watcher-linux-arm-musl@2.5.6':
-    resolution: {integrity: sha512-Ve3gUCG57nuUUSyjBq/MAM0CzArtuIOxsBdQ+ftz6ho8n7s1i9E1Nmk/xmP323r2YL0SONs1EuwqBp2u1k5fxg==}
-    engines: {node: '>= 10.0.0'}
-    cpu: [arm]
-    os: [linux]
-    libc: [musl]
-
-  '@parcel/watcher-linux-arm64-glibc@2.5.6':
-    resolution: {integrity: sha512-f2g/DT3NhGPdBmMWYoxixqYr3v/UXcmLOYy16Bx0TM20Tchduwr4EaCbmxh1321TABqPGDpS8D/ggOTaljijOA==}
-    engines: {node: '>= 10.0.0'}
-    cpu: [arm64]
-    os: [linux]
-    libc: [glibc]
-
-  '@parcel/watcher-linux-arm64-musl@2.5.6':
-    resolution: {integrity: sha512-qb6naMDGlbCwdhLj6hgoVKJl2odL34z2sqkC7Z6kzir8b5W65WYDpLB6R06KabvZdgoHI/zxke4b3zR0wAbDTA==}
-    engines: {node: '>= 10.0.0'}
-    cpu: [arm64]
-    os: [linux]
-    libc: [musl]
-
-  '@parcel/watcher-linux-x64-glibc@2.5.6':
-    resolution: {integrity: sha512-kbT5wvNQlx7NaGjzPFu8nVIW1rWqV780O7ZtkjuWaPUgpv2NMFpjYERVi0UYj1msZNyCzGlaCWEtzc+exjMGbQ==}
-    engines: {node: '>= 10.0.0'}
-    cpu: [x64]
-    os: [linux]
-    libc: [glibc]
-
-  '@parcel/watcher-linux-x64-musl@2.5.6':
-    resolution: {integrity: sha512-1JRFeC+h7RdXwldHzTsmdtYR/Ku8SylLgTU/reMuqdVD7CtLwf0VR1FqeprZ0eHQkO0vqsbvFLXUmYm/uNKJBg==}
-    engines: {node: '>= 10.0.0'}
-    cpu: [x64]
-    os: [linux]
-    libc: [musl]
-
-  '@parcel/watcher-win32-arm64@2.5.6':
-    resolution: {integrity: sha512-3ukyebjc6eGlw9yRt678DxVF7rjXatWiHvTXqphZLvo7aC5NdEgFufVwjFfY51ijYEWpXbqF5jtrK275z52D4Q==}
-    engines: {node: '>= 10.0.0'}
-    cpu: [arm64]
-    os: [win32]
-
-  '@parcel/watcher-win32-ia32@2.5.6':
-    resolution: {integrity: sha512-k35yLp1ZMwwee3Ez/pxBi5cf4AoBKYXj00CZ80jUz5h8prpiaQsiRPKQMxoLstNuqe2vR4RNPEAEcjEFzhEz/g==}
-    engines: {node: '>= 10.0.0'}
-    cpu: [ia32]
-    os: [win32]
-
-  '@parcel/watcher-win32-x64@2.5.6':
-    resolution: {integrity: sha512-hbQlYcCq5dlAX9Qx+kFb0FHue6vbjlf0FrNzSKdYK2APUf7tGfGxQCk2ihEREmbR6ZMc0MVAD5RIX/41gpUzTw==}
-    engines: {node: '>= 10.0.0'}
-    cpu: [x64]
-    os: [win32]
-
-  '@parcel/watcher@2.5.6':
-    resolution: {integrity: sha512-tmmZ3lQxAe/k/+rNnXQRawJ4NjxO2hqiOLTHvWchtGZULp4RyFeh6aU4XdOYBFe2KE1oShQTv4AblOs2iOrNnQ==}
-    engines: {node: '>= 10.0.0'}
-
   '@pinojs/redact@0.4.0':
     resolution: {integrity: sha512-k2ENnmBugE/rzQfEcdWHcCY+/FM3VLzH9cYEsbdsoqrvzAKRhUZeRNhAZvB8OitQJ1TBed3yqWtdjzS6wJKBwg==}
 
@@ -1786,16 +1680,6 @@ packages:
     peerDependencies:
       '@storybook/addon-docs': ^10.5.0
       react: '>=18'
-
-  '@pormeldev/next-runtime-kit@1.5.1':
-    resolution: {integrity: sha512-8pphP2kFlzGP9rbvmw4bj3yJiWlpfk/Rc+J5Mnryslbxynuz/3bZyi9GcFRnCrIPs/ntAU0ssorFCqpIpwL6iQ==, tarball: https://npm.pkg.github.com/download/@pormeldev/next-runtime-kit/1.5.1/12e185163c74f03cd1078dad89e3f982f632e357}
-    peerDependencies:
-      '@pormeldev/axis-common-lib': ^2.0.1
-      '@pormeldev/axis-shared': ^0.3.0-beta.0
-      next: ^16.2.11
-      next-intl: ^4.7.0
-      react: ^19.1.0
-      react-dom: ^19.1.0
 
   '@react-aria/collections@3.0.3':
     resolution: {integrity: sha512-lbC5DEbHeVFvVr4ke9y8D9Nynnr8G8UjVEBoFGRylpAaScU7SX1TN84QI+EjMbsdZ0/5P2H7gUTS+MYd+6U3Rg==}
@@ -1886,9 +1770,6 @@ packages:
         optional: true
       react-redux:
         optional: true
-
-  '@schummar/icu-type-parser@1.21.5':
-    resolution: {integrity: sha512-bXHSaW5jRTmke9Vd0h5P7BtWZG9Znqb8gSDxZnxaGSJnGwPLDPfS+3g0BKzeWqzgZPsIVZkM7m2tbo18cm5HBw==}
 
   '@sentry/conventions@0.16.0':
     resolution: {integrity: sha512-fO9PLmHdVURcSPUpWCItWAtgKiMwGdJHbovoSEyLplX5sxs2ugvI4CBPTrkkgqhObnZOD0CnWBKDzSVQYBKEyQ==}
@@ -3395,9 +3276,6 @@ packages:
     resolution: {integrity: sha512-IKXpvIzjnC9XTAUbVBcMfGS0EPaIXtW6v+zr+RRp+hqULEpo0owZax6wyRwPOJbWbzjYspQwusTsfVr0ifh4uQ==}
     engines: {node: '>=0.10.0'}
 
-  icu-minify@4.9.2:
-    resolution: {integrity: sha512-MYt1aKn6Hrag6KO1gns+2XUjguLnL4lUxnHZXCStB2hdml+ooYzMW1VnOkrwKg5aTh5fGjvfZsgJ9DYC21lTmg==}
-
   ieee754@1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
 
@@ -3456,9 +3334,6 @@ packages:
   internmap@2.0.3:
     resolution: {integrity: sha512-5Hh7Y1wQbvY5ooGgPbDaL5iYLAPzMTUrjMulskHLH6wnv/A+1q5rgEaiuqEjB+oxGXIVZs1FF+R/KPN3ZSQYYg==}
     engines: {node: '>=12'}
-
-  intl-messageformat@11.2.2:
-    resolution: {integrity: sha512-yUfyIkPGqMvvk2onw2xBJeLsjXdiYUYebR8mmZVQYBuZUJsFGVht48Ftm1khgu8EZ0n+izX4rAEj3fLAilkh9g==}
 
   is-arrayish@0.2.1:
     resolution: {integrity: sha512-zz06S8t0ozoDXMG+ube26zeCTNXcKIPJZJi8hBrF4idCLms4CG9QtK7qBl1boi5ODzFpjswb5JPmHCbMpjaYzg==}
@@ -3990,23 +3865,6 @@ packages:
   natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
-  negotiator@1.0.0:
-    resolution: {integrity: sha512-8Ofs/AUQh8MaEcrlq5xOX0CQ9ypTF5dl78mjlMNfOK08fzpgTHQRQPBxcPlEtIw0yRpws+Zo/3r+5WRby7u3Gg==}
-    engines: {node: '>= 0.6'}
-
-  next-intl-swc-plugin-extractor@4.9.2:
-    resolution: {integrity: sha512-VMlEe18tvYgl+2Fl+/hOKckm0Z0EZooBLt3nFjDMva+gopFwZYhNeLBDrc/R8rulWvwBxz8LN+uKPFSQ0fFJ4A==}
-
-  next-intl@4.9.2:
-    resolution: {integrity: sha512-AZoMRsVGLZczB2hisq1OTWmNAYAKwk/jaWH4+9pfl5TCG8kbILZZptZHux9zw7DyN1yzh6X7jmaQvoykHs9Y7Q==}
-    peerDependencies:
-      next: ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || >=19.0.0-rc <19.0.0 || ^19.0.0
-      typescript: '*'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-
   next@16.3.0:
     resolution: {integrity: sha512-NEdGOzH+08eTXMUp9UYkA99Nhi5N6Thrhc1jgFOQgfgnGK/dA2hRwBpXep+exdFQrnwlRf/3Wixyp8lLBUpE2A==}
     engines: {node: '>=20.9.0'}
@@ -4027,9 +3885,6 @@ packages:
         optional: true
       sass:
         optional: true
-
-  node-addon-api@7.1.1:
-    resolution: {integrity: sha512-5m3bsyrjFWE1xf7nz7YXdN4udnVtXK6/Yfgn5qnahL6bCkf2yKt4k3nuTKAtT4r3IG8JNR2ncsIMdZuAzJjHQQ==}
 
   node-int64@0.4.0:
     resolution: {integrity: sha512-O5lz91xSOeoXP6DulyHfllpq+Eg00MWitZIbtPfoSEvqIHdl5gfcY6hYzDWnj0qD5tz52PI08u9qUvSVeUBeHw==}
@@ -4170,10 +4025,6 @@ packages:
     resolution: {integrity: sha512-V7+vQEJ06Z+c5tSye8S+nHUfI51xoXIXjHQ99cQtKUkQqqO1kO/KCJUfZXuB47h/YBlDhah2H3hdUGXn8ie0oA==}
     engines: {node: '>=8.6'}
 
-  picomatch@4.0.4:
-    resolution: {integrity: sha512-QP88BAKvMam/3NxH6vj2o21R6MjxZUAd6nlwAS/pnGvN9IVLocLHxGYIzFhg6fUQ+5th6P4dv4eW9jX3DSIj7A==}
-    engines: {node: '>=12'}
-
   picomatch@4.0.5:
     resolution: {integrity: sha512-RvwwcruNjI1ncT5xRakeyS9Lf8lcItv34KD+aif+VH9kduAyfYBipGh12274xtenIPZ119/R9BdTBa8gAwSh0A==}
     engines: {node: '>=12'}
@@ -4212,9 +4063,6 @@ packages:
     resolution: {integrity: sha512-C8oWjPR3F81yljW9o5OxcWzfh6avkVwDD2VYdwIGqTkl+OGFISgypqzfu7dOe4QNLL2aqcWBmI3PMtLIK233lw==}
     engines: {node: '>=18'}
     hasBin: true
-
-  po-parser@2.1.1:
-    resolution: {integrity: sha512-ECF4zHLbUItpUgE3OTtLKlPjeBN+fKEczj2zYjDfCGOzicNs0GK3Vg2IoAYwx7LH/XYw43fZQP6xnZ4TkNxSLQ==}
 
   postcss@8.5.23:
     resolution: {integrity: sha512-g50586zr4bZmwFiTlflMu8E0bDTb5I5gertgwAKmsdUlTQIhZtunzUlD1WSzwcVWPoAVpsrA6vlfCD7oXvRwgg==}
@@ -4730,11 +4578,6 @@ packages:
 
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
-
-  use-intl@4.9.2:
-    resolution: {integrity: sha512-/FCW/P/wJCv6oGTUOWLNvv+i2uowOg7r/1HAZSBfwbcNoBe5tzXgh9uZaoEKaRl9t7MnZqrDNgEJoYd+1ko1oQ==}
-    peerDependencies:
-      react: ^17.0.0 || ^18.0.0 || >=19.0.0-rc <19.0.0 || ^19.0.0
 
   use-sync-external-store@1.6.0:
     resolution: {integrity: sha512-Pp6GSwGP/NrPIrxVFAIkOQeyw8lFenOHijQWkUTrDvrF4ALqylP2C/KCkeS9dpUM3KvYRQhna5vt7IL95+ZQ9w==}
@@ -5506,18 +5349,6 @@ snapshots:
       '@eslint/core': 1.2.1
       levn: 0.4.1
 
-  '@formatjs/fast-memoize@3.1.2': {}
-
-  '@formatjs/icu-messageformat-parser@3.5.5':
-    dependencies:
-      '@formatjs/icu-skeleton-parser': 2.1.5
-
-  '@formatjs/icu-skeleton-parser@2.1.5': {}
-
-  '@formatjs/intl-localematcher@0.8.4':
-    dependencies:
-      '@formatjs/fast-memoize': 3.1.2
-
   '@humanfs/core@0.19.2':
     dependencies:
       '@humanfs/types': 0.15.0
@@ -6241,66 +6072,6 @@ snapshots:
   '@oxlint/binding-win32-x64-msvc@1.76.0':
     optional: true
 
-  '@parcel/watcher-android-arm64@2.5.6':
-    optional: true
-
-  '@parcel/watcher-darwin-arm64@2.5.6':
-    optional: true
-
-  '@parcel/watcher-darwin-x64@2.5.6':
-    optional: true
-
-  '@parcel/watcher-freebsd-x64@2.5.6':
-    optional: true
-
-  '@parcel/watcher-linux-arm-glibc@2.5.6':
-    optional: true
-
-  '@parcel/watcher-linux-arm-musl@2.5.6':
-    optional: true
-
-  '@parcel/watcher-linux-arm64-glibc@2.5.6':
-    optional: true
-
-  '@parcel/watcher-linux-arm64-musl@2.5.6':
-    optional: true
-
-  '@parcel/watcher-linux-x64-glibc@2.5.6':
-    optional: true
-
-  '@parcel/watcher-linux-x64-musl@2.5.6':
-    optional: true
-
-  '@parcel/watcher-win32-arm64@2.5.6':
-    optional: true
-
-  '@parcel/watcher-win32-ia32@2.5.6':
-    optional: true
-
-  '@parcel/watcher-win32-x64@2.5.6':
-    optional: true
-
-  '@parcel/watcher@2.5.6':
-    dependencies:
-      detect-libc: 2.1.2
-      is-glob: 4.0.3
-      node-addon-api: 7.1.1
-      picomatch: 4.0.4
-    optionalDependencies:
-      '@parcel/watcher-android-arm64': 2.5.6
-      '@parcel/watcher-darwin-arm64': 2.5.6
-      '@parcel/watcher-darwin-x64': 2.5.6
-      '@parcel/watcher-freebsd-x64': 2.5.6
-      '@parcel/watcher-linux-arm-glibc': 2.5.6
-      '@parcel/watcher-linux-arm-musl': 2.5.6
-      '@parcel/watcher-linux-arm64-glibc': 2.5.6
-      '@parcel/watcher-linux-arm64-musl': 2.5.6
-      '@parcel/watcher-linux-x64-glibc': 2.5.6
-      '@parcel/watcher-linux-x64-musl': 2.5.6
-      '@parcel/watcher-win32-arm64': 2.5.6
-      '@parcel/watcher-win32-ia32': 2.5.6
-      '@parcel/watcher-win32-x64': 2.5.6
-
   '@pinojs/redact@0.4.0': {}
 
   '@pkgjs/parseargs@0.11.0':
@@ -6381,16 +6152,6 @@ snapshots:
     dependencies:
       '@storybook/addon-docs': 10.5.4(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(esbuild@0.28.1)(storybook@10.5.4(@types/react@19.2.14)(react@19.1.0))
       react: 19.1.0
-
-  '@pormeldev/next-runtime-kit@1.5.1(@pormeldev/axis-common-lib@2.1.1-beta.3)(@pormeldev/axis-shared@0.7.0(react@19.1.0))(next-intl@4.9.2(@swc/helpers@0.5.23)(next@16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@playwright/test@1.59.1)(@types/node@20.19.39)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(typescript@7.0.2))(next@16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@playwright/test@1.59.1)(@types/node@20.19.39)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
-    dependencies:
-      '@pormeldev/axis-common-lib': 2.1.1-beta.3
-      '@pormeldev/axis-shared': 0.7.0(react@19.1.0)
-      next: 16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@playwright/test@1.59.1)(@types/node@20.19.39)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      next-intl: 4.9.2(@swc/helpers@0.5.23)(next@16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@playwright/test@1.59.1)(@types/node@20.19.39)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(typescript@7.0.2)
-      react: 19.1.0
-      react-dom: 19.1.0(react@19.1.0)
-      server-only: 0.0.1
 
   '@react-aria/collections@3.0.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
@@ -6504,8 +6265,6 @@ snapshots:
     optionalDependencies:
       react: 19.1.0
       react-redux: 9.2.0(@types/react@19.2.14)(react@19.1.0)(redux@5.0.1)
-
-  '@schummar/icu-type-parser@1.21.5': {}
 
   '@sentry/conventions@0.16.0': {}
 
@@ -6696,8 +6455,10 @@ snapshots:
       '@swc/core-win32-ia32-msvc': 1.15.32
       '@swc/core-win32-x64-msvc': 1.15.32
       '@swc/helpers': 0.5.23
+    optional: true
 
-  '@swc/counter@0.1.3': {}
+  '@swc/counter@0.1.3':
+    optional: true
 
   '@swc/helpers@0.5.15':
     dependencies:
@@ -6710,6 +6471,7 @@ snapshots:
   '@swc/types@0.1.27':
     dependencies:
       '@swc/counter': 0.1.3
+    optional: true
 
   '@testing-library/dom@10.4.1':
     dependencies:
@@ -7928,10 +7690,6 @@ snapshots:
     dependencies:
       safer-buffer: 2.1.2
 
-  icu-minify@4.9.2:
-    dependencies:
-      '@formatjs/icu-messageformat-parser': 3.5.5
-
   ieee754@1.2.1: {}
 
   ignore@5.3.2: {}
@@ -7995,11 +7753,6 @@ snapshots:
       - '@types/node'
 
   internmap@2.0.3: {}
-
-  intl-messageformat@11.2.2:
-    dependencies:
-      '@formatjs/fast-memoize': 3.1.2
-      '@formatjs/icu-messageformat-parser': 3.5.5
 
   is-arrayish@0.2.1: {}
 
@@ -8625,27 +8378,6 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  negotiator@1.0.0: {}
-
-  next-intl-swc-plugin-extractor@4.9.2: {}
-
-  next-intl@4.9.2(@swc/helpers@0.5.23)(next@16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@playwright/test@1.59.1)(@types/node@20.19.39)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(typescript@7.0.2):
-    dependencies:
-      '@formatjs/intl-localematcher': 0.8.4
-      '@parcel/watcher': 2.5.6
-      '@swc/core': 1.15.32(@swc/helpers@0.5.23)
-      icu-minify: 4.9.2
-      negotiator: 1.0.0
-      next: 16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@playwright/test@1.59.1)(@types/node@20.19.39)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      next-intl-swc-plugin-extractor: 4.9.2
-      po-parser: 2.1.1
-      react: 19.1.0
-      use-intl: 4.9.2(react@19.1.0)
-    optionalDependencies:
-      typescript: 7.0.2
-    transitivePeerDependencies:
-      - '@swc/helpers'
-
   next@16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@playwright/test@1.59.1)(@types/node@20.19.39)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
       '@next/env': 16.3.0
@@ -8672,8 +8404,6 @@ snapshots:
       - '@babel/core'
       - '@types/node'
       - babel-plugin-macros
-
-  node-addon-api@7.1.1: {}
 
   node-int64@0.4.0: {}
 
@@ -8884,8 +8614,6 @@ snapshots:
 
   picomatch@2.3.2: {}
 
-  picomatch@4.0.4: {}
-
   picomatch@4.0.5: {}
 
   pino-abstract-transport@2.0.0:
@@ -8941,8 +8669,6 @@ snapshots:
       playwright-core: 1.59.1
     optionalDependencies:
       fsevents: 2.3.2
-
-  po-parser@2.1.1: {}
 
   postcss@8.5.23:
     dependencies:
@@ -9563,14 +9289,6 @@ snapshots:
   uri-js@4.4.1:
     dependencies:
       punycode: 2.3.1
-
-  use-intl@4.9.2(react@19.1.0):
-    dependencies:
-      '@formatjs/fast-memoize': 3.1.2
-      '@schummar/icu-type-parser': 1.21.5
-      icu-minify: 4.9.2
-      intl-messageformat: 11.2.2
-      react: 19.1.0
 
   use-sync-external-store@1.6.0(react@19.1.0):
     dependencies:

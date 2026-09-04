@@ -7,7 +7,6 @@ test("renders the Spanish Axis entry point and documentation links", async ({ pa
 
   await expect(page.getByRole("heading", { level: 1, name: "Inicia tu app Axis" })).toBeVisible();
   await expect(page.getByRole("heading", { level: 2, name: "Documentación Axis" })).toBeVisible();
-  await expect(page.getByRole("link", { name: "English" })).toBeVisible();
 
   await expect(page.getByRole("link", { name: /Axis Frontend Docs/ })).toHaveAttribute(
     "href",

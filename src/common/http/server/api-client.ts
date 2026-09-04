@@ -1,7 +1,6 @@
 import "server-only";
 
 import { createDefaultHttpRetryPolicy } from "@pormeldev/axis-client-kit/server";
-import { getLocale } from "next-intl/server";
 import { envConfig } from "@/common/config/env.config";
 import type { UiError } from "@/common/errors/ui-error";
 import { normalizeUiErrorLocale, toUiError } from "@/common/errors/ui-error";
@@ -13,7 +12,7 @@ import {
 import { axisLogPublisher } from "./log-publisher";
 
 async function resolveRequestLocale(locale?: string): Promise<string> {
-  return normalizeUiErrorLocale(locale ?? (await getLocale()));
+  return normalizeUiErrorLocale(locale);
 }
 
 const retryPolicy = createDefaultHttpRetryPolicy({

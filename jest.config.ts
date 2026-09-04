@@ -52,10 +52,6 @@ const config: Config = {
   testEnvironment: "node",
   testPathIgnorePatterns: ["<rootDir>/.next/", "<rootDir>/node_modules/"],
   testRegex: ".*\\.test\\.(ts|tsx)$",
-  transformIgnorePatterns: [
-    "/node_modules/(?!.pnpm|next-intl|use-intl|@pormeldev/next-runtime-kit)",
-    "/node_modules/.pnpm/(?!(next-intl|use-intl|@pormeldev\\+next-runtime-kit)@)",
-  ],
 };
 
 module.exports = createJestConfig(config);

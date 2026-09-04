@@ -17,12 +17,6 @@
   justify-items: center;
 }
 
-.localeSwitcher {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-}
-
 .hero {
   display: grid;
   justify-items: center;
@@ -159,11 +153,6 @@
     height: 100dvh;
     padding: 3rem;
     overflow: hidden;
-  }
-
-  .localeSwitcher {
-    top: 1.5rem;
-    right: 1.5rem;
   }
 
   .content {

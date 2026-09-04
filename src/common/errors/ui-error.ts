@@ -1,6 +1,5 @@
 import { UiErrorTranslator } from "@pormeldev/axis-shared";
-import enMessages from "@/common/translation/locales/en.json";
-import esMessages from "@/common/translation/locales/es.json";
+import { uiErrorMessages } from "@/common/errors/ui-error.messages";
 
 export type UiError = {
   code: string;
@@ -10,10 +9,9 @@ export type UiError = {
 
 const uiErrorTranslator = new UiErrorTranslator({
   defaultLocale: "es",
-  locales: ["es", "en"] as const,
+  locales: ["es"] as const,
   messagesByLocale: {
-    en: enMessages,
-    es: esMessages,
+    es: uiErrorMessages,
   },
 });
 
