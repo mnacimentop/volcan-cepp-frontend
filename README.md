@@ -1,11 +1,10 @@
 # Axis Frontend Template
 
-Base para una aplicación Axis con Next.js 16, React 19, TypeScript, internacionalización y Axis Design System.
+Base para una aplicación Axis con Next.js 16, React 19, TypeScript y Axis Design System.
 
 ## Incluye
 
-- App Router con rutas localizadas en `src/app/[locale]`.
-- `next-intl` y recursos iniciales en español e inglés.
+- App Router con contenido en español fijo.
 - Axis Design System, fuentes y una home de bienvenida.
 - Tooling común en `src/common` para configuración, HTTP, errores, traducciones y UI compartida.
 - Biome, Jest, Playwright, TypeScript 7, Husky y Commitlint.
