@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@pormeldev/axis-client-kit':
         specifier: 0.9.1-beta.0
-        version: 0.9.1-beta.0(@pormeldev/axis-common-lib@2.1.1-beta.3)(@pormeldev/axis-service-httpclient-fetch@1.1.0-beta.9(@pormeldev/axis-common-lib@2.1.1-beta.3)(@pormeldev/axis-service-httpclient@2.2.0-beta.5(@pormeldev/axis-common-lib@2.1.1-beta.3)))(@pormeldev/axis-service-httpclient@2.2.0-beta.5(@pormeldev/axis-common-lib@2.1.1-beta.3))(@pormeldev/axis-service-logger-pino@3.0.2-beta.3(@pormeldev/axis-common-lib@2.1.1-beta.3)(@pormeldev/axis-service-logger@3.0.2-beta.3(@pormeldev/axis-common-lib@2.1.1-beta.3)))(@pormeldev/axis-service-logger@3.0.2-beta.3(@pormeldev/axis-common-lib@2.1.1-beta.3))
+        version: 0.9.1-beta.0(@pormeldev/axis-common-lib@2.1.1-beta.3)(@pormeldev/axis-service-httpclient-fetch@1.1.0)(@pormeldev/axis-service-httpclient@2.2.0-beta.5(@pormeldev/axis-common-lib@2.1.1-beta.3))(@pormeldev/axis-service-logger-pino@3.0.2-beta.3(@pormeldev/axis-common-lib@2.1.1-beta.3)(@pormeldev/axis-service-logger@3.0.2-beta.3(@pormeldev/axis-common-lib@2.1.1-beta.3)))(@pormeldev/axis-service-logger@3.0.2-beta.3(@pormeldev/axis-common-lib@2.1.1-beta.3))
       '@pormeldev/axis-common-lib':
         specifier: 2.1.1-beta.3
         version: 2.1.1-beta.3
@@ -21,8 +21,8 @@ importers:
         specifier: 2.2.0-beta.5
         version: 2.2.0-beta.5(@pormeldev/axis-common-lib@2.1.1-beta.3)
       '@pormeldev/axis-service-httpclient-fetch':
-        specifier: 1.1.0-beta.9
-        version: 1.1.0-beta.9(@pormeldev/axis-common-lib@2.1.1-beta.3)(@pormeldev/axis-service-httpclient@2.2.0-beta.5(@pormeldev/axis-common-lib@2.1.1-beta.3))
+        specifier: 1.1.0
+        version: 1.1.0
       '@pormeldev/axis-service-logger':
         specifier: 3.0.2-beta.3
         version: 3.0.2-beta.3(@pormeldev/axis-common-lib@2.1.1-beta.3)
@@ -1745,6 +1745,12 @@ packages:
       '@pormeldev/axis-service-logger': ^3.0.1
       '@pormeldev/axis-service-logger-pino': ^3.0.1
 
+  '@pormeldev/axis-common-lib@2.1.0':
+    resolution: {integrity: sha512-4pwGxG73hMb9jxs+QmQH+4Bwt7bu9YhjsoO7343x9vwgcc8iF18J0pUZ9+LTf6GWx3KOhdYWiKwf2zvrCObR6Q==, tarball: https://npm.pkg.github.com/download/@pormeldev/axis-common-lib/2.1.0/8a693b24b4ac2a9a39625d95336e5b9b38918876}
+
+  '@pormeldev/axis-common-lib@2.1.1-beta.0':
+    resolution: {integrity: sha512-ZswKDnsDiNXMmJB1mSpEzcB8R7yAqjniY2+ZVz6xxg6EySpovQywCeZ81Io4lGUceo3CRaj+F8IhBXjtxNu4+A==, tarball: https://npm.pkg.github.com/download/@pormeldev/axis-common-lib/2.1.1-beta.0/6525007da9cddf5291f32b873f4f7678fef9bd41}
+
   '@pormeldev/axis-common-lib@2.1.1-beta.3':
     resolution: {integrity: sha512-rPSHY5lHmQwDvZ2wXZFz/oOA1MbrSViA6LojYy2vxoc9D9GTEqqj4oAfh6buO89jwX9VFeXfo+ADex/pLLUeLw==, tarball: https://npm.pkg.github.com/download/@pormeldev/axis-common-lib/2.1.1-beta.3/aa9970c82f597f319604180c60458c08923594ec}
 
@@ -1754,11 +1760,11 @@ packages:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@pormeldev/axis-service-httpclient-fetch@1.1.0-beta.9':
-    resolution: {integrity: sha512-GyIa9rb8HXxKT3whuDuCsf5T7bQrBpGhi+lZGQjmJ1vq4x1Z9HhBJc17A6594i7XOv0E5o4+IDSXZrYiIF25tQ==, tarball: https://npm.pkg.github.com/download/@pormeldev/axis-service-httpclient-fetch/1.1.0-beta.9/6a09d9b7dd0ae2ef1a149cebb96191d79273d3e8}
-    peerDependencies:
-      '@pormeldev/axis-common-lib': 2.1.1-beta.0
-      '@pormeldev/axis-service-httpclient': 2.2.0-beta.5
+  '@pormeldev/axis-service-httpclient-fetch@1.1.0':
+    resolution: {integrity: sha512-gwgyA167RWeZA4o8xEVg0B+oFpczxsKESwq1tprEP2sCF1SYew2bzKGSsCEtXeLoDCsqX/yMCUj9oSi0irQDtQ==, tarball: https://npm.pkg.github.com/download/@pormeldev/axis-service-httpclient-fetch/1.1.0/0b5382a3d039481675b6f9aa06ec54f185db0f83}
+
+  '@pormeldev/axis-service-httpclient@2.1.0':
+    resolution: {integrity: sha512-7Mz0/tqv7o72sxhnUIWeXFXFSkCWUY2zvFMfH9e/gbR66zVaGZS0pr6bAViMCCaTerQMzXPKVFO+nwbQSj+2CA==, tarball: https://npm.pkg.github.com/download/@pormeldev/axis-service-httpclient/2.1.0/f538e9ecacc50d535a677fc5221739aa2d0b8d87}
 
   '@pormeldev/axis-service-httpclient@2.2.0-beta.5':
     resolution: {integrity: sha512-1gFwDPO+4bERoYb/wbJDz7ThC14wX0/JbScHwZndjXINwVluJ4ac8BCFsT72py11vugP1pd+1kyrWDZjiNfZBw==, tarball: https://npm.pkg.github.com/download/@pormeldev/axis-service-httpclient/2.2.0-beta.5/4ce14b2a5df0d6f7ee0ddbc456dec872ccc2aa5e}
@@ -6312,14 +6318,26 @@ snapshots:
     dependencies:
       playwright: 1.59.1
 
-  '@pormeldev/axis-client-kit@0.9.1-beta.0(@pormeldev/axis-common-lib@2.1.1-beta.3)(@pormeldev/axis-service-httpclient-fetch@1.1.0-beta.9(@pormeldev/axis-common-lib@2.1.1-beta.3)(@pormeldev/axis-service-httpclient@2.2.0-beta.5(@pormeldev/axis-common-lib@2.1.1-beta.3)))(@pormeldev/axis-service-httpclient@2.2.0-beta.5(@pormeldev/axis-common-lib@2.1.1-beta.3))(@pormeldev/axis-service-logger-pino@3.0.2-beta.3(@pormeldev/axis-common-lib@2.1.1-beta.3)(@pormeldev/axis-service-logger@3.0.2-beta.3(@pormeldev/axis-common-lib@2.1.1-beta.3)))(@pormeldev/axis-service-logger@3.0.2-beta.3(@pormeldev/axis-common-lib@2.1.1-beta.3))':
+  '@pormeldev/axis-client-kit@0.9.1-beta.0(@pormeldev/axis-common-lib@2.1.1-beta.3)(@pormeldev/axis-service-httpclient-fetch@1.1.0)(@pormeldev/axis-service-httpclient@2.2.0-beta.5(@pormeldev/axis-common-lib@2.1.1-beta.3))(@pormeldev/axis-service-logger-pino@3.0.2-beta.3(@pormeldev/axis-common-lib@2.1.1-beta.3)(@pormeldev/axis-service-logger@3.0.2-beta.3(@pormeldev/axis-common-lib@2.1.1-beta.3)))(@pormeldev/axis-service-logger@3.0.2-beta.3(@pormeldev/axis-common-lib@2.1.1-beta.3))':
     dependencies:
       '@pormeldev/axis-common-lib': 2.1.1-beta.3
       '@pormeldev/axis-service-httpclient': 2.2.0-beta.5(@pormeldev/axis-common-lib@2.1.1-beta.3)
-      '@pormeldev/axis-service-httpclient-fetch': 1.1.0-beta.9(@pormeldev/axis-common-lib@2.1.1-beta.3)(@pormeldev/axis-service-httpclient@2.2.0-beta.5(@pormeldev/axis-common-lib@2.1.1-beta.3))
+      '@pormeldev/axis-service-httpclient-fetch': 1.1.0
       '@pormeldev/axis-service-logger': 3.0.2-beta.3(@pormeldev/axis-common-lib@2.1.1-beta.3)
       '@pormeldev/axis-service-logger-pino': 3.0.2-beta.3(@pormeldev/axis-common-lib@2.1.1-beta.3)(@pormeldev/axis-service-logger@3.0.2-beta.3(@pormeldev/axis-common-lib@2.1.1-beta.3))
       server-only: 0.0.1
+
+  '@pormeldev/axis-common-lib@2.1.0':
+    dependencies:
+      decimal.js: 10.6.0
+      luxon: 3.7.2
+      uuid: 10.0.0
+
+  '@pormeldev/axis-common-lib@2.1.1-beta.0':
+    dependencies:
+      decimal.js: 10.6.0
+      luxon: 3.7.2
+      uuid: 10.0.0
 
   '@pormeldev/axis-common-lib@2.1.1-beta.3':
     dependencies:
@@ -6353,10 +6371,14 @@ snapshots:
       - react-is
       - redux
 
-  '@pormeldev/axis-service-httpclient-fetch@1.1.0-beta.9(@pormeldev/axis-common-lib@2.1.1-beta.3)(@pormeldev/axis-service-httpclient@2.2.0-beta.5(@pormeldev/axis-common-lib@2.1.1-beta.3))':
+  '@pormeldev/axis-service-httpclient-fetch@1.1.0':
     dependencies:
-      '@pormeldev/axis-common-lib': 2.1.1-beta.3
-      '@pormeldev/axis-service-httpclient': 2.2.0-beta.5(@pormeldev/axis-common-lib@2.1.1-beta.3)
+      '@pormeldev/axis-common-lib': 2.1.1-beta.0
+      '@pormeldev/axis-service-httpclient': 2.1.0
+
+  '@pormeldev/axis-service-httpclient@2.1.0':
+    dependencies:
+      '@pormeldev/axis-common-lib': 2.1.0
 
   '@pormeldev/axis-service-httpclient@2.2.0-beta.5(@pormeldev/axis-common-lib@2.1.1-beta.3)':
     dependencies:
