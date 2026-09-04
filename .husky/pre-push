@@ -1,0 +1,25 @@
+#!/bin/sh
+
+echo "🧪 Running tests before push..."
+
+CI=1 pnpm test -- --runInBand --ci
+test_status=$?
+
+if [ $test_status -ne 0 ]; then
+  echo "❌ Tests failed. Push aborted."
+  exit 1
+fi
+
+echo "✅ Tests passed."
+echo "🏗️ Running build before push..."
+
+# Define PUBLIC_PATH para builds locales (lo que en Actions te pasa el pipeline)
+PUBLIC_PATH="/" pnpm build
+status=$?
+
+if [ $status -ne 0 ]; then
+  echo "❌ Build failed. Push aborted."
+  exit 1
+fi
+
+echo "✅ Build successful. Proceeding with push."

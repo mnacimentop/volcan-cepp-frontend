@@ -1,0 +1,82 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.5.6/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "files": {
+    "ignoreUnknown": true,
+    "includes": ["**", "!node_modules", "!.next", "!dist", "!build"]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 100
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "preset": "recommended",
+      "suspicious": {
+        "noConsole": "warn",
+        "noExplicitAny": "error",
+        "noUndeclaredEnvVars": {
+          "level": "error",
+          "options": {
+            "allowedEnvVars": ["ANALYZE", "BASE_URL"]
+          }
+        }
+      },
+      "correctness": {
+        "noUnusedImports": "error",
+        "noUndeclaredDependencies": {
+          "level": "error",
+          "options": {
+            "devDependencies": [
+              "**/*.test.ts",
+              "**/*.spec.ts",
+              "**/tests/**",
+              "**/jest.config.ts",
+              "**/jest.setup.ts",
+              "**/next.config.ts",
+              "**/playwright.config.ts",
+              "**/scripts/**"
+            ]
+          }
+        }
+      },
+      "security": {
+        "noSecrets": "error"
+      },
+      "style": {
+        "useImportType": "error"
+      },
+      "a11y": {
+        "useAltText": "error"
+      }
+    },
+    "domains": {
+      "next": "recommended",
+      "react": "recommended",
+      "test": "recommended"
+    }
+  },
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double",
+      "jsxQuoteStyle": "double",
+      "semicolons": "always",
+      "trailingCommas": "all"
+    }
+  }
+}

@@ -1,0 +1,413 @@
+{
+  "schema_version": "gcf-governance-catalog.v1",
+  "id": "gcf_governance_catalog",
+  "name": "global-context-frontend-governance-catalog",
+  "version": "1.19.1",
+  "last_updated": "2026-07-01",
+  "status": "plugin-primary",
+  "description": "Machine-readable governance catalog for the Global Context Frontend plugin-only distribution model with project-scoped runtime materialization and bundled consumer bootstrap scripts.",
+  "plugin": {
+    "name": "pormel-global-context-frontend",
+    "version": "0.2.7",
+    "entrypoint": "plugins/pormel-global-context-frontend/.codex-plugin/plugin.json"
+  },
+  "global_config": {
+    "base_architecture": "architecture/base-rules.md",
+    "architecture_defaults": [
+      "architecture/base-rules.md",
+      "architecture/next16-modular.md",
+      "architecture/actions-standard.md",
+      "architecture/biome-rules.md",
+      "architecture/typescript-rules.md",
+      "architecture/axis-app-router-structure.md",
+      "architecture/axis-feature-module-structure.md",
+      "architecture/axis-common-layer-scope.md",
+      "architecture/axis-server-data-flow.md",
+      "architecture/axis-http-integration.md",
+      "architecture/axis-domain-modeling.md",
+      "architecture/axis-internationalization-structure.md",
+      "architecture/axis-auth-boundaries.md"
+    ],
+    "ds_usage": "design-system/usage-rules.md",
+    "design_system_defaults": [
+      "design-system/usage-rules.md",
+      "design-system/theme-governance.md",
+      "design-system/component-consumption-rules.md",
+      "design-system/accessibility-and-states.md",
+      "design-system/layout-and-composition.md",
+      "design-system/data-display-and-feedback.md"
+    ],
+    "governance_entrypoints": [
+      "README.md",
+      "catalog/governance.catalog.json",
+      "plugins/pormel-global-context-frontend/README.md",
+      "plugins/pormel-global-context-frontend/scripts/materialize_runtime.py",
+      "references/protocols/bootstrap.md",
+      "references/protocols/preflight.md"
+    ]
+  },
+  "projects": {
+    "active_packages": [
+      {
+        "slug": "volcan-pae-frontend",
+        "id": "prj_volcan_pae_frontend",
+        "catalog_path": "catalog/projects/volcan-pae-frontend.json",
+        "status": "active"
+      },
+      {
+        "slug": "edenor-sdr-frontend",
+        "id": "prj_edenor_sdr_frontend",
+        "catalog_path": "catalog/projects/edenor-sdr-frontend.json",
+        "status": "active"
+      }
+    ]
+  },
+  "discovery": {
+    "default_documents": [
+      "architecture.base-rules",
+      "architecture.next16-modular",
+      "architecture.actions-standard",
+      "architecture.biome-rules",
+      "architecture.typescript-rules",
+      "architecture.axis-app-router-structure",
+      "architecture.axis-feature-module-structure",
+      "architecture.axis-server-data-flow",
+      "architecture.axis-http-integration",
+      "architecture.axis-domain-modeling",
+      "design-system.usage-rules",
+      "design-system.theme-governance",
+      "design-system.component-consumption-rules",
+      "design-system.accessibility-and-states",
+      "design-system.layout-and-composition",
+      "design-system.data-display-and-feedback"
+    ],
+    "entrypoints": [
+      "catalog/governance.catalog.json",
+      "plugins/pormel-global-context-frontend/.codex-plugin/plugin.json",
+      "plugins/pormel-global-context-frontend/README.md",
+      "plugins/pormel-global-context-frontend/scripts/materialize_runtime.py",
+      "README.md",
+      "references/protocols/bootstrap.md",
+      "references/protocols/preflight.md",
+      "references/protocols/project-resolution.md",
+      "references/protocols/runtime-state.md",
+      "references/protocols/snapshot.md",
+      "references/protocols/synchronization.md",
+      "plugins/pormel-global-context-frontend/skills/axis-rules/SKILL.md"
+    ]
+  },
+  "documents": [
+    {
+      "id": "repo.readme",
+      "category": "repository",
+      "path": "README.md",
+      "format": "markdown",
+      "tags": [
+        "entrypoint",
+        "repository",
+        "overview"
+      ]
+    },
+    {
+      "id": "plugin.bundle-readme",
+      "category": "plugin",
+      "path": "plugins/pormel-global-context-frontend/README.md",
+      "format": "markdown",
+      "tags": [
+        "entrypoint",
+        "plugin",
+        "bootstrap"
+      ]
+    },
+    {
+      "id": "architecture.base-rules",
+      "category": "architecture",
+      "path": "architecture/base-rules.md",
+      "format": "markdown",
+      "tags": [
+        "default",
+        "architecture",
+        "baseline"
+      ]
+    },
+    {
+      "id": "architecture.next16-modular",
+      "category": "architecture",
+      "path": "architecture/next16-modular.md",
+      "format": "markdown",
+      "tags": [
+        "default",
+        "architecture",
+        "nextjs"
+      ]
+    },
+    {
+      "id": "architecture.actions-standard",
+      "category": "architecture",
+      "path": "architecture/actions-standard.md",
+      "format": "markdown",
+      "tags": [
+        "default",
+        "architecture",
+        "actions"
+      ]
+    },
+    {
+      "id": "architecture.biome-rules",
+      "category": "architecture",
+      "path": "architecture/biome-rules.md",
+      "format": "markdown",
+      "tags": [
+        "default",
+        "architecture",
+        "tooling"
+      ]
+    },
+    {
+      "id": "architecture.typescript-rules",
+      "category": "architecture",
+      "path": "architecture/typescript-rules.md",
+      "format": "markdown",
+      "tags": [
+        "default",
+        "architecture",
+        "typescript"
+      ]
+    },
+    {
+      "id": "architecture.axis-app-router-structure",
+      "category": "architecture",
+      "path": "architecture/axis-app-router-structure.md",
+      "format": "markdown",
+      "tags": [
+        "default",
+        "architecture",
+        "routing"
+      ]
+    },
+    {
+      "id": "architecture.axis-feature-module-structure",
+      "category": "architecture",
+      "path": "architecture/axis-feature-module-structure.md",
+      "format": "markdown",
+      "tags": [
+        "default",
+        "architecture",
+        "modules"
+      ]
+    },
+    {
+      "id": "architecture.axis-common-layer-scope",
+      "category": "architecture",
+      "path": "architecture/axis-common-layer-scope.md",
+      "format": "markdown",
+      "tags": [
+        "architecture",
+        "shared"
+      ]
+    },
+    {
+      "id": "architecture.axis-server-data-flow",
+      "category": "architecture",
+      "path": "architecture/axis-server-data-flow.md",
+      "format": "markdown",
+      "tags": [
+        "default",
+        "architecture",
+        "data-flow"
+      ]
+    },
+    {
+      "id": "architecture.axis-http-integration",
+      "category": "architecture",
+      "path": "architecture/axis-http-integration.md",
+      "format": "markdown",
+      "tags": [
+        "default",
+        "architecture",
+        "http"
+      ]
+    },
+    {
+      "id": "architecture.axis-domain-modeling",
+      "category": "architecture",
+      "path": "architecture/axis-domain-modeling.md",
+      "format": "markdown",
+      "tags": [
+        "default",
+        "architecture",
+        "domain"
+      ]
+    },
+    {
+      "id": "architecture.axis-internationalization-structure",
+      "category": "architecture",
+      "path": "architecture/axis-internationalization-structure.md",
+      "format": "markdown",
+      "tags": [
+        "architecture",
+        "i18n"
+      ]
+    },
+    {
+      "id": "architecture.axis-auth-boundaries",
+      "category": "architecture",
+      "path": "architecture/axis-auth-boundaries.md",
+      "format": "markdown",
+      "tags": [
+        "architecture",
+        "auth"
+      ]
+    },
+    {
+      "id": "design-system.usage-rules",
+      "category": "design-system",
+      "path": "design-system/usage-rules.md",
+      "format": "markdown",
+      "tags": [
+        "default",
+        "design-system",
+        "usage"
+      ]
+    },
+    {
+      "id": "design-system.theme-governance",
+      "category": "design-system",
+      "path": "design-system/theme-governance.md",
+      "format": "markdown",
+      "tags": [
+        "default",
+        "design-system",
+        "themes"
+      ]
+    },
+    {
+      "id": "design-system.component-consumption-rules",
+      "category": "design-system",
+      "path": "design-system/component-consumption-rules.md",
+      "format": "markdown",
+      "tags": [
+        "default",
+        "design-system",
+        "components"
+      ]
+    },
+    {
+      "id": "design-system.accessibility-and-states",
+      "category": "design-system",
+      "path": "design-system/accessibility-and-states.md",
+      "format": "markdown",
+      "tags": [
+        "default",
+        "design-system",
+        "accessibility"
+      ]
+    },
+    {
+      "id": "design-system.layout-and-composition",
+      "category": "design-system",
+      "path": "design-system/layout-and-composition.md",
+      "format": "markdown",
+      "tags": [
+        "default",
+        "design-system",
+        "layout"
+      ]
+    },
+    {
+      "id": "design-system.data-display-and-feedback",
+      "category": "design-system",
+      "path": "design-system/data-display-and-feedback.md",
+      "format": "markdown",
+      "tags": [
+        "default",
+        "design-system",
+        "feedback"
+      ]
+    },
+    {
+      "id": "design-system.components",
+      "category": "design-system",
+      "path": "design-system/components.json",
+      "format": "json",
+      "tags": [
+        "design-system",
+        "registry"
+      ]
+    },
+    {
+      "id": "design-system.theme.default",
+      "category": "design-system-theme",
+      "path": "design-system/themes/default-theme.md",
+      "format": "markdown",
+      "tags": [
+        "theme",
+        "default"
+      ]
+    },
+    {
+      "id": "design-system.theme.volcan",
+      "category": "design-system-theme",
+      "path": "design-system/themes/volcan-theme.md",
+      "format": "markdown",
+      "tags": [
+        "theme",
+        "volcan"
+      ]
+    },
+    {
+      "id": "design-system.theme.edenor",
+      "category": "design-system-theme",
+      "path": "design-system/themes/edenor-theme.md",
+      "format": "markdown",
+      "tags": [
+        "theme",
+        "edenor"
+      ]
+    },
+    {
+      "id": "plugin.skills.axis-rules",
+      "category": "plugin-skill",
+      "path": "plugins/pormel-global-context-frontend/skills/axis-rules/SKILL.md",
+      "format": "markdown",
+      "tags": [
+        "plugin",
+        "skill",
+        "axis",
+        "architecture"
+      ]
+    },
+    {
+      "id": "plugin.skills.axis-rules-routing",
+      "category": "plugin-skill-reference",
+      "path": "plugins/pormel-global-context-frontend/skills/axis-rules/references/axis-routing.md",
+      "format": "markdown",
+      "tags": [
+        "plugin",
+        "skill",
+        "axis",
+        "routing"
+      ]
+    },
+    {
+      "id": "projects.volcan-pae-frontend.package",
+      "category": "project-package",
+      "path": "catalog/projects/volcan-pae-frontend.json",
+      "format": "json",
+      "tags": [
+        "project",
+        "active"
+      ]
+    },
+    {
+      "id": "projects.edenor-sdr-frontend.package",
+      "category": "project-package",
+      "path": "catalog/projects/edenor-sdr-frontend.json",
+      "format": "json",
+      "tags": [
+        "project",
+        "active"
+      ]
+    }
+  ]
+}

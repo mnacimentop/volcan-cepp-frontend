@@ -1,0 +1,24 @@
+# Source control and local tooling
+.git
+.github
+.mcp.json
+
+# Dependencies and generated output
+node_modules
+.next
+coverage
+playwright-report
+test-results
+*.tsbuildinfo
+
+# Local configuration and secrets
+.env*
+*.pem
+
+# Development-only files
+docs
+docs.zip
+tests
+*.log
+npm-debug.log*
+pnpm-debug.log*

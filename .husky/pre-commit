@@ -1,0 +1,57 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo ""
+echo "================================================"
+echo "         VALIDANDO CON REACT DOCTOR"
+echo "================================================"
+echo ""
+
+echo "Analizando archivos modificados..."
+echo ""
+
+pnpm exec react-doctor . --scope changed --base develop --verbose
+
+exit_code=$?
+
+echo ""
+echo "================================================"
+
+score_output=$(pnpm exec react-doctor . --scope changed --base develop --score 2>&1)
+score=$(printf "%s\n" "$score_output" | grep -E '^[[:space:]]*([0-9]|[1-9][0-9]|100)[[:space:]]*$' | tail -n 1 | tr -d '[:space:]')
+
+if [ -z "$score" ]; then
+  echo "$score_output"
+  echo "RECHAZO: No se pudo obtener el score de React Doctor"
+  exit 1
+fi
+
+echo "React Doctor Score: $score/100"
+echo "================================================"
+echo ""
+
+min_score=80
+
+if [ "$score" -lt "$min_score" ]; then
+  echo "RECHAZO: Score $score es MENOR que $min_score"
+  echo ""
+  echo "Acción requerida:"
+  echo "1. Revisá los errores arriba"
+  echo "2. Corrige los problemas"
+  echo "3. Intentá hacer commit nuevamente"
+  echo ""
+  exit 1
+fi
+
+if [ $exit_code -ne 0 ]; then
+  echo "RECHAZO: React Doctor detectó problemas"
+  echo ""
+  echo "Revisá los errores listados arriba"
+  echo ""
+  exit 1
+fi
+
+echo "APROBADO: Todas las validaciones pasaron"
+echo "Commit permitido"
+echo ""
+exit 0

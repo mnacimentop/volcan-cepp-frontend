@@ -1,0 +1,13 @@
+{
+  "snapshot_status": "purged",
+  "snapshot_task_id": null,
+  "snapshot_last_updated_at": null,
+  "snapshot_expires_at": null,
+  "snapshot_consumed_at": null,
+  "snapshot_purged_at": null,
+  "snapshot_integrity_checked_at": null,
+  "snapshot_integrity_verification": "unchecked",
+  "snapshot_tampered_at": null,
+  "integrity_status": "unchecked",
+  "notes": []
+}
