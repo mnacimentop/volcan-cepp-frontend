@@ -32,7 +32,7 @@
     "@pormeldev/axis-common-lib": "2.1.1-beta.3",
     "@pormeldev/axis-design-system": "2.48.0",
     "@pormeldev/axis-service-httpclient": "2.2.0-beta.5",
-    "@pormeldev/axis-service-httpclient-fetch": "1.1.0-beta.9",
+    "@pormeldev/axis-service-httpclient-fetch": "1.1.0",
     "@pormeldev/axis-service-logger": "3.0.2-beta.3",
     "@pormeldev/axis-service-logger-pino": "3.0.2-beta.3",
     "@pormeldev/axis-shared": "0.7.0",
