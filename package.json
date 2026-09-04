@@ -28,7 +28,7 @@
     "network:check": "node ./scripts/http-toolkit/check-http-toolkit.mjs"
   },
   "dependencies": {
-    "@pormeldev/axis-client-kit": "0.9.1-beta.0",
+    "@pormeldev/axis-client-kit": "0.9.1",
     "@pormeldev/axis-common-lib": "2.1.1-beta.3",
     "@pormeldev/axis-design-system": "2.48.0",
     "@pormeldev/axis-service-httpclient": "2.2.0-beta.5",
